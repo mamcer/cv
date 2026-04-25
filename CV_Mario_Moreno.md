@@ -115,8 +115,18 @@ body {
 }
 
 @media print {
-    @page { margin: 0; size: A4; }
-    .sidebar { -webkit-print-color-adjust: exact; }
+    @page { 
+        margin: 0; 
+        size: A4;
+    }
+    body {
+        margin: 0;
+        -webkit-print-color-adjust: exact;
+    }
+    .cv-wrapper {
+        min-height: 297mm;
+        height: 297mm; /* Forzamos altura A4 */
+    }
 }
 </style>
 
