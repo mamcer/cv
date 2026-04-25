@@ -5,6 +5,10 @@ on:
     branches: [ main, master ]
   workflow_dispatch:
 
+# Permisos explícitos para que el bot pueda escribir en el repositorio
+permissions:
+  contents: write
+
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
@@ -14,6 +18,9 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+        with:
+          # Necesario para que gh-pages pueda pushear correctamente
+          persist-credentials: true
 
       - name: Markdown PDF
         uses: baileyjm02/markdown-to-pdf@v1
@@ -42,3 +49,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./final_cv
           publish_branch: pdf-download
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
