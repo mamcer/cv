@@ -5,6 +5,9 @@ on:
     branches: [ main, master ]
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,7 +21,10 @@ jobs:
           input_path: CV_Mario_Moreno.md
           output_dir: ./output
           build_html: false
-          
+
+      - name: Fix permissions
+        run: sudo chown -R $USER:$USER .
+
       - name: Rename Output
         run: |
           mkdir -p ./final_cv
