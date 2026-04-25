@@ -1,0 +1,38 @@
+name: Generate Resume PDF
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Markdown PDF
+        uses: baileyjm02/markdown-to-pdf@v1
+        with:
+          input_path: CV_Mario_Moreno.md
+          output_dir: ./output
+          build_html: false
+          
+      - name: Rename Output
+        run: |
+          mkdir -p ./final_cv
+          mv ./output/CV_Mario_Moreno.pdf ./final_cv/CV_Mario_Moreno_Senior_Engineering_Manager.pdf
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: Professional_CV
+          path: ./final_cv/CV_Mario_Moreno_Senior_Engineering_Manager.pdf
+
+      - name: Deploy to Branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./final_cv
+          publish_branch: pdf-download
