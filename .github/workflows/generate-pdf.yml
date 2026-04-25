@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Markdown PDF
         uses: baileyjm02/markdown-to-pdf@v1
@@ -25,13 +25,13 @@ jobs:
           mv ./output/CV_Mario_Moreno.pdf ./final_cv/CV_Mario_Moreno_Senior_Engineering_Manager.pdf
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Professional_CV
           path: ./final_cv/CV_Mario_Moreno_Senior_Engineering_Manager.pdf
 
       - name: Deploy to Branch
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./final_cv
