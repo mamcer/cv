@@ -136,7 +136,7 @@ body {
 
 ### CONTACT
 
-- 📧 [mario.moreno@live.com](mailto:mario.moreno@live.com)
+- 📧 [mamcer@protonmail.com](mailto:mamcer@protonmail.com)
 - 🔗 [linkedin.com/in/mamcer](https://www.linkedin.com/in/mamcer)
 - 💻 [github.com/mamcer](https://www.github.com/mamcer)
 - 📍 Buenos Aires, Argentina
