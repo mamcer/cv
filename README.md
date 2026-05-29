@@ -1,4 +1,4 @@
-# Mario Moreno | Senior Engineering Manager & Software Architect
+# Mario Moreno | Senior Engineering Leader | AI-Augmented Delivery | Scaling High-Performance Squads (30+)
 
 Professional trajectory focused on high-availability systems, AI-First development cycles, and strategic technical leadership.
 

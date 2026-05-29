@@ -136,7 +136,7 @@ body {
 
 ### CONTACT
 
-- 📧 [mamcer@protonmail.com](mailto:mamcer@protonmail.com)
+- 📧 [mamcer@proton.me](mailto:mamcer@proton.me)
 - 🔗 [linkedin.com/in/mamcer](https://www.linkedin.com/in/mamcer)
 - 💻 [github.com/mamcer](https://www.github.com/mamcer)
 - 📍 Buenos Aires, Argentina
@@ -171,7 +171,7 @@ Claude Code, Gemini CLI, Docker, K8s, Jenkins.
 <div class="main-col">
 
 # MARIO MORENO
-<div class="subtitle">AI-First Senior Engineering Manager & Software Architect</div>
+<div class="subtitle">Senior Engineering Leader | AI-Augmented Delivery | Scaling High-Performance Squads (30+)</div>
 
 ## PROFESSIONAL SUMMARY
 
