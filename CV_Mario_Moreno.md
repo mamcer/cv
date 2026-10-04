@@ -218,7 +218,7 @@ Systems engineer with 20+ years in software, most of them leading teams without 
 ### Architect & Subject Matter Expert | Globant
 <div class="meta"><span>Corporate Architecture Team</span> <span class="date">Oct 2013 – Aug 2017</span></div>
 
-- Defined the company-wide CI/CD, code review and continuous inspection strategy; led design reviews across studios.
+- Implemented the company-wide CI/CD, code review and continuous inspection strategy; participated in design reviews across studios.
 </div>
 
 ## PROJECTS
