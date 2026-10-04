@@ -154,13 +154,13 @@ body {
 ### TECH STACK
 
 **Languages:**
-Go, C#/.NET, SQL (MySQL).
+Go, Java, SQL (MySQL).
 
 **Architecture:**
 DDD, Hexagonal, Event-Driven.
 
 **Platform:**
-Docker, Kubernetes, CI/CD, Prometheus, Grafana, OpenTelemetry.
+Docker, Kubernetes, Azure, CI/CD, Prometheus, Grafana, OpenTelemetry.
 
 **AI tools:**
 Claude Code, Gemini CLI.
@@ -187,11 +187,11 @@ Systems engineer with 20+ years in software, most of them leading teams without 
 <div class="experience-item">
 
 ### Senior Engineering Manager | VEMO
-<div class="meta"><span>VEMO Charging Network & Watts app</span> <span class="date">Sep 2025 – Present</span></div>
+<div class="meta"><span>Technology Lead, VEMO Charging Network (EV charging, Mexico)</span> <span class="date">Sep 2025 – Present</span></div>
 
-- Technology lead for VEMO's EV charging platform in Mexico.
-- Leading the migration from a monolith to a modular design based on hexagonal/clean architecture.
-- Brought Claude Code and Gemini CLI into the team's daily workflow, with shared conventions instead of individual experiments.
+- Own the end-to-end architecture, scalability and availability of the VCN platform; leading the migration from a monolith to a modular hexagonal/clean architecture.
+- Brought Claude Code into the team's daily development workflow.
+- Shipped a new card payment experience (100% of users) and a discount engine built from scratch, with a team 36% smaller than the previous semester.
 </div>
 
 <div class="experience-item">
