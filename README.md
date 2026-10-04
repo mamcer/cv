@@ -8,7 +8,9 @@ My CV as code: a single Markdown source with embedded CSS, rendered to PDF.
 Every push to `main` runs a GitHub Action that renders the Markdown with
 headless Chrome ([md-to-pdf](https://github.com/simonhaenisch/md-to-pdf),
 options in [`.md-to-pdf.json`](./.md-to-pdf.json)), checks that the result is
-a single A4 page, and publishes it to the `pdf-download` branch.
+a single A4 page, and publishes it to the `pdf-download` branch. The Inter
+font is bundled in [`fonts/`](./fonts) (SIL Open Font License) so the output
+doesn't depend on the fonts installed on the build machine.
 
 To render locally:
 

@@ -1,4 +1,18 @@
 <style>
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/InterVariable.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/InterVariable-Italic.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
 :root {
     --primary-color: #1a2a3a;
     --accent-color: #34495e;
@@ -8,7 +22,7 @@
 }
 
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 9.5pt;
     line-height: 1.4;
     color: var(--text-main);
@@ -110,6 +124,8 @@ body {
 }
 
 .date {
+    white-space: nowrap;
+    padding-left: 8px;
     font-weight: bold;
     color: var(--primary-color);
     font-style: normal;
