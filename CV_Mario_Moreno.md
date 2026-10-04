@@ -202,6 +202,7 @@ Systems engineer with 20+ years in software, most of them leading teams without 
 - Scaled daily FX operations from $50K to **$6M USD avg** (120x); made the platform the company-wide source of truth for exchange rates, with direct Citi and JP Morgan settlement integrations.
 - Led the re-architecture of the cross-border platform, enabling expansion from 2 to 5 countries.
 - Operated high-traffic microservices for Crypto and Dollar MEP operations. Stack: Go, Java, MySQL, on Fury.
+- Grew the team from 6 to 30+ engineers across Argentina, Brazil and Mexico.
 </div>
 
 <div class="experience-item">
