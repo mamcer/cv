@@ -2,52 +2,52 @@ name: Generate Resume PDF
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
   workflow_dispatch:
 
-# Permisos explícitos para que el bot pueda escribir en el repositorio
 permissions:
   contents: write
-
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
+      - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          # Necesario para que gh-pages pueda pushear correctamente
-          persist-credentials: true
+          node-version: 20
 
-      - name: Markdown PDF
-        uses: baileyjm02/markdown-to-pdf@v1
-        with:
-          input_path: CV_Mario_Moreno.md
-          output_dir: ./output
-          build_html: false
+      # md-to-pdf renders with headless Chrome, so the embedded CSS layout is kept.
+      - name: Render PDF
+        run: npx --yes md-to-pdf@5 --config-file .md-to-pdf.json CV_Mario_Moreno.md
 
-      - name: Fix permissions
-        run: sudo chown -R $USER:$USER .
-
-      - name: Rename Output
+      - name: Check page count
         run: |
-          mkdir -p ./final_cv
-          mv ./output/CV_Mario_Moreno.pdf ./final_cv/CV_Mario_Moreno_Senior_Engineering_Manager.pdf
+          sudo apt-get install -y -qq poppler-utils >/dev/null
+          pages=$(pdfinfo CV_Mario_Moreno.pdf | awk '/^Pages:/ {print $2}')
+          echo "Pages: $pages"
+          test "$pages" -eq 1
 
-      - name: Upload Artifact
+      - name: Prepare output
+        run: |
+          mkdir -p final_cv
+          mv CV_Mario_Moreno.pdf final_cv/
+
+      - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Professional_CV
-          path: ./final_cv/CV_Mario_Moreno_Senior_Engineering_Manager.pdf
+          name: CV_Mario_Moreno
+          path: final_cv/CV_Mario_Moreno.pdf
 
-      - name: Deploy to Branch
+      - name: Deploy to pdf-download branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./final_cv
           publish_branch: pdf-download
+          force_orphan: true
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'

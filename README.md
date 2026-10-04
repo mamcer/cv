@@ -1,32 +1,17 @@
-# Mario Moreno | Senior Engineering Leader | AI-Augmented Delivery | Scaling High-Performance Squads (30+)
+# CV — Mario Moreno
 
-Professional trajectory focused on high-availability systems, AI-First development cycles, and strategic technical leadership.
+My CV as code: a single Markdown source with embedded CSS, rendered to PDF.
 
-## Resume
-
-This repository contains my professional CV in **Markdown-as-Code** format.
-
+- **Latest PDF:** [CV_Mario_Moreno.pdf](https://github.com/mamcer/cv/raw/pdf-download/CV_Mario_Moreno.pdf)
 - **Source:** [CV_Mario_Moreno.md](./CV_Mario_Moreno.md)
-- **Design:** Embedded CSS in the Markdown source.
 
-## Automated Build
+Every push to `main` runs a GitHub Action that renders the Markdown with
+headless Chrome ([md-to-pdf](https://github.com/simonhaenisch/md-to-pdf),
+options in [`.md-to-pdf.json`](./.md-to-pdf.json)), checks that the result is
+a single A4 page, and publishes it to the `pdf-download` branch.
 
-This repository is equipped with a **GitHub Action** that automatically generates the PDF on every push. 
+To render locally:
 
-### How to get the PDF:
-
-1. **Direct Download:** You can find the latest generated PDF in the `pdf-download` branch.
-2. **Local Generation:**
-   - Open this repository in **VS Code**.
-   - Install the `Markdown PDF` extension by **yzane**.
-   - Open `CV_Mario_Moreno.md`.
-   - Press `Ctrl+Shift+P` and run `Markdown PDF: Export (pdf)`.
-
-## Tech Stack
-
-- **Languages:** Golang, .NET Core, C#, SQL.
-- **Concepts:** DDD, Hexagonal Architecture, AI-Augmented SDLC, Distributed Systems.
-- **Cloud/DevOps:** AWS, GCP, Docker, Kubernetes, Jenkins.
-
----
-*Generated with ❤️ and AI-First principles.*
+```bash
+npx md-to-pdf --config-file .md-to-pdf.json CV_Mario_Moreno.md
+```

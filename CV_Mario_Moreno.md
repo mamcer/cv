@@ -9,8 +9,8 @@
 
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 10.5pt;
-    line-height: 1.5;
+    font-size: 9.5pt;
+    line-height: 1.4;
     color: var(--text-main);
     margin: 0;
     padding: 0;
@@ -19,13 +19,13 @@ body {
 
 .cv-wrapper {
     display: grid;
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: 230px 1fr;
     min-height: 297mm;
 }
 
 .sidebar {
     background-color: var(--sidebar-bg);
-    padding: 30px 25px;
+    padding: 26px 20px;
     border-right: 1px solid #eee;
 }
 
@@ -34,8 +34,8 @@ body {
     color: var(--primary-color);
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    margin-top: 25px;
-    margin-bottom: 10px;
+    margin-top: 18px;
+    margin-bottom: 8px;
     border-bottom: 1px solid #dcdde1;
     padding-bottom: 5px;
 }
@@ -47,17 +47,17 @@ body {
 }
 
 .sidebar li {
-    font-size: 9.5pt;
-    margin-bottom: 8px;
+    font-size: 9pt;
+    margin-bottom: 5px;
     color: var(--text-muted);
 }
 
 .main-col {
-    padding: 30px 40px;
+    padding: 26px 32px;
 }
 
 .main-col h1 {
-    font-size: 26pt;
+    font-size: 22pt;
     color: var(--primary-color);
     margin: 0;
     font-weight: 700;
@@ -65,31 +65,31 @@ body {
 }
 
 .main-col .subtitle {
-    font-size: 12pt;
+    font-size: 10.5pt;
     color: var(--accent-color);
     font-weight: 400;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    margin-top: 4px;
+    margin-bottom: 10px;
 }
 
 .main-col h2 {
-    font-size: 13pt;
+    font-size: 11.5pt;
     color: var(--primary-color);
     text-transform: uppercase;
     letter-spacing: 1px;
     border-bottom: 2px solid var(--primary-color);
-    margin-top: 30px;
-    margin-bottom: 15px;
+    margin-top: 16px;
+    margin-bottom: 8px;
     padding-bottom: 3px;
 }
 
 .experience-item {
-    margin-bottom: 20px;
+    margin-bottom: 8px;
 }
 
 .experience-item h3 {
-    font-size: 11.5pt;
-    margin-top: 15px;
+    font-size: 10.5pt;
+    margin-top: 8px;
     margin-bottom: 2px;
     color: #000;
 }
@@ -97,15 +97,16 @@ body {
 .experience-item .meta {
     display: flex;
     justify-content: space-between;
-    font-size: 9.5pt;
+    font-size: 9pt;
     color: var(--text-muted);
     font-style: italic;
-    margin-bottom: 8px;
+    margin-bottom: 3px;
 }
 
 .experience-item ul {
     padding-left: 18px;
-    margin-top: 5px;
+    margin-top: 3px;
+    margin-bottom: 0;
 }
 
 .date {
@@ -136,29 +137,33 @@ body {
 
 ### CONTACT
 
-- 📧 [mamcer@proton.me](mailto:mamcer@proton.me)
-- 🔗 [linkedin.com/in/mamcer](https://www.linkedin.com/in/mamcer)
-- 💻 [github.com/mamcer](https://www.github.com/mamcer)
-- 📍 Buenos Aires, Argentina
+- [mamcer@proton.me](mailto:mamcer@proton.me)
+- [linkedin.com/in/mamcer](https://www.linkedin.com/in/mamcer)
+- [github.com/mamcer](https://github.com/mamcer)
+- [mamcer.github.io](https://mamcer.github.io/)
+- Buenos Aires, Argentina
 
 ### CORE EXPERTISE
 
-- Engineering Management
+- Software Architecture
 - Distributed Systems
+- Engineering Leadership
+- AI-assisted Development
 - Fintech & Payments
-- AI-Augmented SDLC
-- Multicultural Leadership
 
 ### TECH STACK
 
 **Languages:**
-Golang, .NET Core C#.
+Go, C#/.NET, SQL (MySQL).
 
 **Architecture:**
 DDD, Hexagonal, Event-Driven.
 
-**Tools:**
-Claude Code, Gemini CLI, Docker, K8s, Jenkins.
+**Platform:**
+Docker, Kubernetes, CI/CD, Prometheus, Grafana, OpenTelemetry.
+
+**AI tools:**
+Claude Code, Gemini CLI.
 
 ### LANGUAGES
 
@@ -171,55 +176,57 @@ Claude Code, Gemini CLI, Docker, K8s, Jenkins.
 <div class="main-col">
 
 # MARIO MORENO
-<div class="subtitle">Senior Engineering Leader | AI-Augmented Delivery | Scaling High-Performance Squads (30+)</div>
+<div class="subtitle">Hands-on Engineering Leader | Software Architecture · Go · Distributed Systems | AI-assisted development | Fintech (Mercado Pago) · EV charging (VEMO)</div>
 
-## PROFESSIONAL SUMMARY
+## SUMMARY
 
-Systems Engineer with 20+ years of experience transforming legacy architectures into high-availability cloud-native ecosystems.<br/> 
-Evolving development teams into "AI-First" organizations, significantly increasing delivery velocity and code quality.<br/> 
-Managed multicultural squads of 30+ engineers in hyper-growth Fintech and Energy environments.
+Systems engineer with 20+ years in software, most of them leading teams without leaving the technical work. Led engineering for Mercado Pago's Treasury & FX platform (daily FX volume from $50K to $6M USD, cross-border expansion from 2 to 5 countries). Now leading technology at VEMO (EV charging, Mexico): monolith modernization and AI-assisted development in day-to-day delivery.
 
-## PROFESSIONAL EXPERIENCE
+## EXPERIENCE
 
 <div class="experience-item">
 
 ### Senior Engineering Manager | VEMO
-<div class="meta"><span>AI-First Transformation & Watts Ecosystem</span> <span class="date">Sep 2025 – Present</span></div>
+<div class="meta"><span>VEMO Charging Network & Watts app</span> <span class="date">Sep 2025 – Present</span></div>
 
-- Led adoption of Claude Code across engineering, optimizing SDLC and reducing time-to-market.
-- Orchestrated the tech strategy for Mexico's leading EV charging platform, ensuring top-tier scalability.
+- Technology lead for VEMO's EV charging platform in Mexico.
+- Leading the migration from a monolith to a modular design based on hexagonal/clean architecture.
+- Brought Claude Code and Gemini CLI into the team's daily workflow, with shared conventions instead of individual experiments.
 </div>
 
 <div class="experience-item">
 
 ### Senior Engineering Manager | Mercado Libre
-<div class="meta"><span>120x Scaling & Fintech Ops</span> <span class="date">Aug 2019 – May 2025</span></div>
+<div class="meta"><span>Mercado Pago Treasury & FX platform</span> <span class="date">Aug 2019 – May 2025</span></div>
 
-- Scaled daily FX operations from $50K to **$6M USD avg**, establishing the corporate "Source of Truth" for FX.
-- Led architectural reengineering of international payments, enabling expansion to 5 countries.
-- Managed high-traffic microservices for Crypto and Dollar MEP operations in Argentina.
+- Scaled daily FX operations from $50K to **$6M USD avg** (120x); made the platform the company-wide source of truth for exchange rates, with direct Citi and JP Morgan settlement integrations.
+- Led the re-architecture of the cross-border platform, enabling expansion from 2 to 5 countries.
+- Operated high-traffic microservices for Crypto and Dollar MEP operations. Stack: Go, Java, MySQL, on Fury.
 </div>
 
 <div class="experience-item">
 
 ### Senior Technical Lead | In All Media / DataArt
-<div class="meta"><span>Global Solutions Delivery</span> <span class="date">Apr 2018 – Aug 2019</span></div>
+<div class="meta"><span>US energy and financial-services clients</span> <span class="date">Sep 2017 – Aug 2019</span></div>
 
-- Architected critical solutions for global Energy and Finance clients, leading distributed remote teams.
+- Technical lead and architect for distributed remote teams, from definition through delivery (.NET, SQL Server, PostgreSQL).
 </div>
 
 <div class="experience-item">
 
-### Architect & SME | Globant
-<div class="meta"><span>Architecture Strategy & Standards</span> <span class="date">Oct 2013 – Aug 2017</span></div>
+### Architect & Subject Matter Expert | Globant
+<div class="meta"><span>Corporate Architecture Team</span> <span class="date">Oct 2013 – Aug 2017</span></div>
 
-- Member of Corporate Architecture Team, enforcing Clean Code/CI/CD standards and leading Design Reviews.
+- Defined the company-wide CI/CD, code review and continuous inspection strategy; led design reviews across studios.
 </div>
+
+## PROJECTS
+
+**Poor Man's Fury** (2026): an internal developer platform built from scratch on a single home server (K3s, Vault, CI/CD, Prometheus, Grafana, Loki, Tempo, OpenTelemetry, Backstage), documented in a 5-part series at mamcer.github.io.
 
 ## EDUCATION
 
-**Systems Engineer (Software Engineering)**
-UNCPBA University, Argentina
+**Systems Engineer (Software Engineering)**, UNICEN (UNCPBA), Argentina
 
 </div>
 
